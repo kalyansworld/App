@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA
 st.title('Anomaly Detection')
 
 try:
-    data=pd.read_excel('C:/Users/kalya/Documents/PycharmProjects/FeatureEngineering/AssignmentData.xlsx',sheet_name='creditcard_test')
+    data = pd.read_csv('creditcard_test.csv')
     st.write("Data Head:")
     st.write(data.head())
     data = data.apply(pd.to_numeric, errors='coerce')
